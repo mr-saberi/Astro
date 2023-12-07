@@ -1668,6 +1668,7 @@ while true; do
             echo ""
             # Update package index and install required packages
             sudo apt update
+            sudo apt upgrade -y
             sudo apt install apache2 ghostscript mysql-server  php php-bcmath libapache2-mod-php php-mysql php-curl php-json  php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
             # install wordpress
             sudo mkdir -p /srv/www
